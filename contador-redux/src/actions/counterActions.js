@@ -11,7 +11,6 @@ export function decrement() {
 }
 
 export function stepChanged(e) {
-    console.log(e.target.value)
     return {
         type: 'STEP_CHANGED',
         payload: e.target.value
