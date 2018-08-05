@@ -6,11 +6,20 @@ const INITIAL_STATE = {
 export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case 'INCREMENT':
-            return { ...state, number: state.number + state.step }
+            return { 
+                ...state, 
+                number: state.number + state.step 
+            }
         case 'DECREMENT':
-            return { ...state, number: state.number - state.step }
+            return { 
+                ...state, 
+                number: state.number - state.step 
+            }
         case 'STEP_CHANGED':
-            return { ...state, step: + action.payload }
+            return { 
+                ...state, 
+                step: + action.payload 
+            }
         default:
             return state;
     }
