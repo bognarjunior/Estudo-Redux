@@ -5,8 +5,11 @@ import { increment, decrement, stepChanged } from './../actions/counterActions'
 
 const Counter = props => (
     <div>
-        <h1>{props.counter.number}</h1>
-        <input  onChange={props.stepChanged} value={props.counter.step} type="number"/>
+        <h1>Contador: {props.counter.number}</h1>
+        <p> Incrementar em 
+            <input  onChange={props.stepChanged} value={props.counter.step} type="number"/>
+        </p>
+        <br />
         <button onClick={props.increment}> Incrementar </button>
         <button onClick={props.decrement}> Decrementar </button>
     </div>
